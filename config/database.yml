@@ -1,0 +1,20 @@
+global: &defaults
+  adapter: postgresql
+  encoding: utf8
+  pool: 10
+  reconnect: true
+  min_messages: warning
+
+development:
+  <<: *defaults
+  host: localhost
+  database: puracambio
+  username: postgres
+  password: password
+
+production:
+  <<: *defaults
+  database: <%= ENV['DB_NAME'] %>
+  host: <%= ENV['DB_HOST'] %>
+  username: <%= ENV['DB_USER'] %>
+  password: <%= ENV['DB_PASSWORD'] %>

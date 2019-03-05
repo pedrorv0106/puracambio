@@ -1,0 +1,30 @@
+.tabbable
+  ul.nav.nav-tabs
+    li.active: a.btc-proof href="#btc-proof" data-toggle="tab" == t('.verify-btc')
+    li:        a.eth-proof href="#eth-proof" data-toggle="tab" == t('.verify-eth')
+    li:        a.tlcp-proof href="#tlcp-proof" data-toggle="tab" == t('.verify-tlcp')
+
+  .tab-content
+    #btc-proof.tab-pane.active: .trade-wrapper
+      .assets
+        span.title = t('.btc-assets-total')
+        span.currency
+          == t("currency.icon.btc")
+          = @btc_proof.sum
+      = render 'liability_data', account: @btc_account, proof: @btc_proof
+
+    #eth-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.eth-assets-total')
+        span.currency
+          == t("currency.icon.eth")
+          = @eth_proof.sum
+      = render 'liability_data', account: @eth_account, proof: @eth_proof
+
+    #tlcp-proof.tab-pane:        .trade-wrapper
+      .assets
+        span.title = t('.tlcp-assets-total')
+        span.currency
+          == t("currency.icon.tlcp")
+          = @tlcp_proof.sum
+      = render 'liability_data', account: @tlcp_account, proof: @tlcp_proof

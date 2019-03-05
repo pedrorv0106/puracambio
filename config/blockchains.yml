@@ -1,0 +1,4 @@
+- key:               tlcp
+  name:              Travelcoinplus
+  height:            131386                # Initial block number from which sync will be started.
+  status:            active

@@ -1,0 +1,16 @@
+- id: 200
+  key: satoshi
+  currency: btc
+  sort_order: 1
+  min_confirm: 1
+  max_confirm: 3
+- id: 500
+  key: ether
+  currency: eth
+  min_confirm: 1
+  max_confirm: 6
+- id: 800
+  key: travelcoin
+  currency: tlcp
+  min_confirm: 1
+  max_confirm: 6

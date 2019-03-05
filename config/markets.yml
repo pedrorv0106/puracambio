@@ -1,0 +1,68 @@
+#- id: btcusd
+#  code: 3
+#  name: BTC/USD     # default name
+#  base_unit: btc
+#  quote_unit: usd
+#  #price_group_fixed: 1 # aggregate price levels in orderbook
+#  bid: {fee: 0, currency: usd, fixed: 2}
+#  ask: {fee: 0, currency: btc, fixed: 8}
+#  sort_order: 1
+#  visible: false     # default to true
+#- id: ethusd
+#  code: 4
+#  name: ETH/USD
+#  base_unit: eth
+#  quote_unit: usd
+#  #price_group_fixed: 1 # aggregate price levels in orderbook
+#  bid: {fee: 0, currency: usd, fixed: 2}
+#  ask: {fee: 0, currency: eth, fixed: 4}
+#  sort_order: 2
+#  visible: false     # default to true
+- id: btctlcp
+  code: 5
+  name: BTC/TLCP
+  base_unit: btc
+  quote_unit: tlcp
+  bid: {fee: 0, currency: tlcp, fixed: 4}
+  ask: {fee: 0, currency: btc, fixed: 4}
+  sort_order: 3
+- id: ethtlcp
+  code: 6
+  name: ETH/TLCP
+  base_unit: eth
+  quote_unit: tlcp
+  bid: {fee: 0, currency: tlcp, fixed: 4}
+  ask: {fee: 0, currency: eth, fixed: 4}
+  sort_order: 4
+- id: tlcpbtc
+  code: 7
+  name: TLCP/BTC
+  base_unit: tlcp
+  quote_unit: btc
+  bid: {fee: 0, currency: btc, fixed: 4}
+  ask: {fee: 0, currency: tlcp, fixed: 4}
+  sort_order: 5
+- id: tlcpeth
+  code: 8
+  name: TLCP/ETH
+  base_unit: tlcp
+  quote_unit: eth
+  bid: {fee: 0, currency: eth, fixed: 4}
+  ask: {fee: 0, currency: tlcp, fixed: 4}
+  sort_order: 6
+- id: btceth
+  code: 9
+  name: BTC/ETH
+  base_unit: btc
+  quote_unit: eth
+  bid: {fee: 0, currency: eth, fixed: 4}
+  ask: {fee: 0, currency: btc, fixed: 4}
+  sort_order: 7
+- id: ethbtc
+  code: 10
+  name: ETH/BTC
+  base_unit: btc
+  quote_unit: btc
+  bid: {fee: 0, currency: btc, fixed: 4}
+  ask: {fee: 0, currency: eth, fixed: 4}
+  sort_order: 8

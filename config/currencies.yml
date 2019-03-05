@@ -1,0 +1,48 @@
+#- id: 1
+#  key: usdollars
+#  code: usd
+#  symbol: "$"
+#  coin: false
+#  precision: 2
+#  assets:
+#    accounts:
+#      -
+#        bank: 'Bank of America'
+#        address: '123 Some Street'
+#        password: 'Somewhere'
+#        tel: '555-555-5555'
+- id: 2
+  key: satoshi
+  code: btc
+  symbol: "฿"
+  coin: true
+  family: BTC
+  quick_withdraw_max: 0.1
+  rpc: http://dream:dream@127.0.0.1:18332
+  blockchain: https://blockchain.info/tx/#{txid}
+  address_url: https://blockchain.info/address/#{address}
+- id: 3
+  key: ether
+  code: eth
+  symbol: "E"
+  coin: true
+  family: ETH
+  precision: 4
+  quick_withdraw_max: 5
+  rpc: http://10.6.11.108:8545
+  blockchain: https://etherscan.io/tx/#{txid}
+  address_url: https://etherscan.io/address/#{address}
+- id: 4
+  key: travelcoin
+  code: tlcp
+  symbol: "TLCP"
+  coin: true
+  main_address: "0xC1fD8a5E763Ec3fa63c415061B8394B7Ee72cA9f"
+  smart_contract_address: "0x5ac38cf12f5063b4d8823530b9e386814f4a07f3"
+  password: "q2&9ss8BAATaI6rrzTTDDim*f84V4Q7IlJ3"
+  family: TLCP
+  precision: 8
+  quick_withdraw_max: 50
+  rpc: https://exchange.travelcoinplus.com:8545
+  blockchain: "https://ethplorer.travelcoinplus.com/#/tx/#{txid}"
+  address_url: "https://ethplorer.travelcoinplus.com/#/address/#{address}"

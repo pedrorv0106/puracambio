@@ -1,0 +1,11 @@
+- unless @one_travelcoins.empty?
+  .panel.panel-primary
+    .panel-heading: span = t('.one')
+    = render partial: 'table', locals: {travelcoins: @one_travelcoins}
+- unless @all_travelcoins.empty?
+  .panel.panel-success
+    .panel-heading: span = t('.all')
+    = render partial: 'table', locals: {travelcoins: @all_travelcoins}
+
+- if @all_travelcoins.empty? and @one_travelcoins.empty?
+  h3.text-info.text-center = t('.empty')
